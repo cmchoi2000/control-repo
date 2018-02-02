@@ -4,4 +4,3 @@ class windemo::createfile {
 	content => 'hello world 123abc',
 	}
 }
-include createfile
