@@ -1,5 +1,5 @@
 class windemo::createuser {
-	user {'Test1':
+	user {'Test123':
 	ensure => present,
 	}
 }
