@@ -3,4 +3,3 @@ class windemo::createuser {
 	ensure => present,
 	}
 }
-include createuser

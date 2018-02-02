@@ -5,4 +5,3 @@ registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet1':
 }
 
 }
-include registrytest
