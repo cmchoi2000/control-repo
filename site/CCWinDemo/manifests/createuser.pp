@@ -1,4 +1,4 @@
-class CCWinDemo::createuser {
+class ccwindemo::createuser {
 	user {'Test1':
 	ensure => present,
 	}

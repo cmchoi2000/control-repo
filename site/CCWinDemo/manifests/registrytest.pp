@@ -1,4 +1,4 @@
-class CCWinDemo::registrytest {
+class ccwindemo::registrytest {
 
 registry_key { 'HKLM\System\CurrentControlSet\Services\Puppet1':
     ensure => present,
