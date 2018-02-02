@@ -1,4 +1,4 @@
-class ccwindemo::createuser {
+class windemo::createuser {
 	user {'Test1':
 	ensure => present,
 	}
