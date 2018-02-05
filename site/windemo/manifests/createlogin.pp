@@ -1,6 +1,6 @@
 class windemo::createlogin {
 	user {'test01':
-			name      => 'service',
+			name      => 'Test Account 01',
 			ensure    => present,
 			groups    => ['Users','Administrators'],
 			password  => 'helloworld',
