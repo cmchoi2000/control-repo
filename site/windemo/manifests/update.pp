@@ -63,7 +63,7 @@
 # [*service*]
 #  Advanced use only; Windows update service, defaults to 'wuauserv'.
 #
-class windows::update(
+class windemo::update(
   $ensure               = 'disabled',
   $type                 = '2',
   $all_users            = false,
