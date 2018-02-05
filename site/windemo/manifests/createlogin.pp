@@ -3,7 +3,7 @@ class windemo::createlogin {
 			name      => 'Test Account 01',
 			ensure    => present,
 			groups    => ['Users','Administrators'],
-			password  => 'helloworld',
+			password  => 'helloworld123!',
 			managehome => true,
 	}
 }
