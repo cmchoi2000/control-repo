@@ -17,7 +17,7 @@ forge "https://forge.puppet.com"
 #  :branch => 'docs_experiment'
 
 mod 'puppetlabs-reboot', '2.0.0'
-mod 'puppetlabs-registry', '2.0.0'
+mod 'puppetlabs-registry', '1.1.4'
 mod 'puppetlabs-acl', '2.0.1'
 mod 'puppetlabs-stdlib'
 mod 'puppet-windows_autoupdate', '2.0.0'
