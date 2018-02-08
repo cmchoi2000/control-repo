@@ -19,3 +19,4 @@ forge "https://forge.puppet.com"
 mod 'puppetlabs-reboot', '2.0.0'
 mod 'puppetlabs-registry', '2.0.1'
 mod 'puppetlabs-acl', '2.0.1'
+mod 'puppet-windows_autoupdate', '2.0.0'
