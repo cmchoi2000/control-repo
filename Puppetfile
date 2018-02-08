@@ -15,3 +15,7 @@ forge "https://forge.puppet.com"
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+
+mod 'puppetlabs-reboot', '2.0.0'
+mod 'puppetlabs-registry', '2.0.1'
+mod 'puppetlabs-acl', '2.0.1'
