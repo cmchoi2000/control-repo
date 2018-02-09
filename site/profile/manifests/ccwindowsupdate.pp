@@ -1,3 +1,5 @@
 class profile::ccwindowsupdate {
-  class { 'windows_autoupdate': no_auto_update => '1'
+  class {'wsus_client': 
+6     no_auto_update => true, 
+7   } 
 }
