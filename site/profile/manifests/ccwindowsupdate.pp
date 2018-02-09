@@ -1,5 +1,6 @@
 class profile::ccwindowsupdate { 
    class {'wsus_client': 
-     no_auto_update => true, 
+    auto_update_option => NotifyOnly,
+    #no_auto_update => true, 
    } 
  } 
