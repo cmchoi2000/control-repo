@@ -1,4 +1,3 @@
 class profile::ccwindowsupdate {
-  class { 'windows_autoupdate': noAutoUpdate => '1' }
-
+  class { 'windows_autoupdate': no_auto_update => '1'
 }
