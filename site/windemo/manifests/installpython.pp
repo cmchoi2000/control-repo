@@ -4,7 +4,7 @@ class windemo::installpython {
   source => 'puppet:///win_share/Software/Python/python-2.7.10.amd64.msi',
 
   }
-  package {'EA emake':
+  package {'Python':
   ensure => installed,
   source => 'C:\Windows\Temp\python-2.7.10.amd64.msi',
   install_options => ['/quiet'],
