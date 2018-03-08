@@ -7,6 +7,6 @@ class windemo::installea {
   package {'EA emake':
   ensure => installed,
   source => 'C:\Windows\Temp\ElectricAccelerator-10.0.1.78161-Windows-Install.exe',
-  install_options => ['/q'],
+  install_options => ['//mode silent'],
   }
 }
