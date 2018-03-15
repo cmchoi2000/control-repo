@@ -4,7 +4,7 @@ registry_key { 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System':
     ensure => present,
 }
 registry_value { 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA':
-  type => REG_DWORD,
+  type => dword,
   data => '0'
 }
 
