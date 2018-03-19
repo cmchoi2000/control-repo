@@ -7,6 +7,6 @@ class windemo::installsab {
   package {'InstallShield SAB':
   ensure => installed,
   source => 'C:/Windows/Temp/InstallShield2016StandaloneBuild.exe',
-  install_options => ['/silent'],
+  install_options => ['/s', '/v"LICENSETYPE=2 SERVERNAME=sfs-sw-license ADDLOCAL=ALL /qn"'],
   }
 }
