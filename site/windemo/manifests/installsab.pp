@@ -1,7 +1,7 @@
 class windemo::installsab {
   file {'C:/Windows/Temp/InstallShield2016StandaloneBuild.exe':
   ensure => file,
-  source => 'puppet:///win_share/Software/InstallShield/InstallShield\ 2016/Installs/InstallShield\ Standalone\ Build/InstallShield2016StandaloneBuild.exe',
+  source => 'puppet:///win_share/Software/InstallShield/InstallShield\s2016/Installs/InstallShield\sStandalone\sBuild/InstallShield2016StandaloneBuild.exe',
   }
   package {'InstallShield SAB':
   ensure => installed,
