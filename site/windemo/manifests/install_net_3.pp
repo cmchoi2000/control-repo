@@ -4,4 +4,7 @@ class windemo::install_net_3 {
   source => 'puppet:///win_share/Software/Microsoft/WindowsServer2012R2/sxs',
   recurse => 'remote'
   }
+windowsfeature { 'NET-Framework-Core':
+  ensure => present,
+  }
 }
