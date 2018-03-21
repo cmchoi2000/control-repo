@@ -4,7 +4,7 @@ class windemo::installea {
   source => 'puppet:///win_share/Software/ElectricCloud/10.0.1.78161/windows/ElectricAccelerator-10.0.1.78161-Windows-Install.exe',
 
   }
-  package {'EA emake':
+  package {'ElectricAccelerator':
   ensure => installed,
   source => 'C:\Windows\Temp\ElectricAccelerator-10.0.1.78161-Windows-Install.exe',
   install_options => ['--mode', 'silent'],

@@ -3,7 +3,7 @@ class windemo::installultraiso {
   ensure => file,
   source => 'puppet:///win_share/Software/UltraISO/9.6.6.3300/uiso9_pe.exe',
   }
-  package {'UltraISO':
+  package {'UltraISO Premium V9.66':
   ensure => installed,
   source => 'C:\Windows\Temp\uiso9_pe.exe',
   install_options => ['/silent'],
