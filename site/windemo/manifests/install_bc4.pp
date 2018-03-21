@@ -1,9 +1,13 @@
 class windemo::install_bc4 {
-  file {'C:\Install\bc4  ':
+	file {'C:\Install\bc4':
+	ensure => directory,
+	}
+
+  file {'C:\Install\bc4\BCompare-4.2.4.22795.exe':
   ensure => file,
   source => 'puppet:///win_share/Software/BeyondCompare/BC4/BCompare-4.2.4.22795.exe',
   }
-  file {'C:\Install\bc4  ':
+  file {'C:\Install\bc4\BC4Key.txt':
   ensure => file,
   source => 'puppet:///win_share/Software/BeyondCompare/BC4/BC4Key.txt',
   }
