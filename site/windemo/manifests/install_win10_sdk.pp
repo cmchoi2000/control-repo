@@ -7,7 +7,7 @@ class windemo::install_win10_sdk {
 
   package {'Windows Software Development Kit - Windows 10.0.16299.91':
   ensure => installed,
-  source => 'C:\Install\winsdksetup.exe',
+  source => 'C:\Install\WindowsSDK\winsdksetup.exe',
   install_options => ['/features OptionId.WindowsDesktopDebuggers', '/q'],
   }
 }
