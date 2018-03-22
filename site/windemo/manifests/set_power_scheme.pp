@@ -13,8 +13,6 @@
 #  'Balanced', 'High performance', and 'Power saver'.
 #
 
-# performance power scheme GUID
-
-class { 'windows::power_scheme':
+class windemo::set_power_scheme{
   ensure => 'High performance',
 }
