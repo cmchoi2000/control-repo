@@ -3,8 +3,7 @@ class windemo::install_win10_sdk {
   ensure => directory,
   source => 'puppet:///win_share/Software/Microsoft/WindowsKits/10/WindowsSDK',
   recurse => 'remote'
-  }
-
+  } ->
   package {'Windows Software Development Kit - Windows 10.0.16299.91':
   ensure => installed,
   source => 'C:\Install\WindowsSDK\winsdksetup.exe',
