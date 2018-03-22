@@ -1,4 +1,4 @@
-class windemo::enablerdp {
+class windemo::enable_rdp {
 
 # Remote Desktop Connection
 registry::value { 'rdp':

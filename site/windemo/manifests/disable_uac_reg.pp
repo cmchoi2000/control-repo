@@ -1,4 +1,4 @@
-class windemo::regdisableuac {
+class windemo::disable_uac_reg {
 
 registry_key { 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System':
     ensure => present,

@@ -1,4 +1,4 @@
-class windemo::install_net_3 {
+class windemo::enable_net_3 {
   windowsfeature { 'NET-Framework-Core':
     ensure => present,
     }

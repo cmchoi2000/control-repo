@@ -12,7 +12,7 @@
 #  A mapping of power scheme names to their GUID.  The default schemes supported are:
 #  'Balanced', 'High performance', and 'Power saver'.
 #
-class windemo::power_scheme(
+class windemo::set_power_scheme(
   $ensure = 'High performance',
   $guids  = {
     'Balanced'         => '381b4222-f694-41f0-9685-ff5bb260df2e',

@@ -1,9 +1,8 @@
-class windemo::installpython {
+class windemo::install_python27 {
   file {'C:\Install\python-2.7.10.amd64.msi':
   ensure => file,
   source => 'puppet:///win_share/Software/Python/python-2.7.10.amd64.msi',
-
-  }
+  } ->
   package {'Python 2.7.10 (64-bit)':
   ensure => installed,
   source => 'C:\Install\python-2.7.10.amd64.msi',
