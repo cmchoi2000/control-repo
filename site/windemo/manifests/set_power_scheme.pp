@@ -13,9 +13,11 @@
 #  'Balanced', 'High performance', and 'Power saver'.
 #
 
-class { 'windemo::set_power_scheme':
+
+class { 'windows::power_scheme':
   ensure => 'High performance',
 }
+
 #class windemo::set_power_scheme{
 #  ensure => 'High performance',
 #}
