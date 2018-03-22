@@ -2,7 +2,7 @@ class windemo::install_sw {
   include windemo::enable_rdp
   include windemo::disable_uac_reg
   include windemo::enable_net_3
-  #include windemo::set_power_scheme
+  include windemo::set_power_scheme
   include windemo::set_win_update
   include windemo::install_ultraiso
   #include windemo::install_sqlclr2014
