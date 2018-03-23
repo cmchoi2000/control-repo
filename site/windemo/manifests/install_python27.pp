@@ -13,7 +13,7 @@ class windemo::install_python27 {
   source => 'C:\Install\python-2.7.10.amd64.msi',
   install_options => ['/quiet'],
   }
-  exec { 'Install Cypthon':
-    command => 'cd C:\Install\Cypthon; C:\Install\Cypthon\install-cython.cmd',
-  }
+#  exec { 'Install Cypthon':
+#    command => 'cd C:\Install\Cypthon; C:\Install\Cypthon\install-cython.cmd',
+#  }
 }
