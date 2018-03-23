@@ -3,14 +3,16 @@ class windemo::set_puppet_interval (
     'windows' => 'C:/ProgramData/PuppetLabs/puppet/etc/puppet.conf', 
     /(CentOS|RedHat)/ => '/etc/puppetlabs/puppet/puppet.conf', 
   }, 
-  $runint='1h', 
-  ) 
+  $runint, 
+  )
+
 { 
   ini_setting { 'change runinterval': 
     ensure  => present, 
     path    => $pathnm, 
     section => 'agent', 
     setting => 'runinterval', 
-    value   => $runint, 
+#    value   => $runint, 
+    value   => '1h', 
   } 
 } 
