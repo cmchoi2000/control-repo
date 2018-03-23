@@ -1,4 +1,7 @@
 class windemo::set_vs_config {
+	file {'C:\Users\Administrator\AppData\Local\Microsoft\MSBuild':
+	ensure => directory,
+	}
 	file {'C:\Users\Administrator\AppData\Local\Microsoft\MSBuild\v4.0':
 	ensure => directory,
 	}
