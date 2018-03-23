@@ -14,6 +14,7 @@ class windemo::install_python27 {
   install_options => ['/quiet'],
   }
   exec { 'Install Cypthon':
+    command => 'cd C:\Install\Cypthon',
     command => 'C:\Install\Cypthon\install-cython.cmd',
   }
 }
