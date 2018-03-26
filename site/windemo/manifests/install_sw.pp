@@ -1,8 +1,8 @@
 class windemo::install_sw {
   include windemo::enable_rdp
   include windemo::set_admin_pwd_ne
-  include windemo::disable_uac_reg
   include windemo::enable_net_3
+  include windemo::disable_uac_reg
   #include windows::set_power_scheme
   include windemo::set_win_update
   include windemo::install_ultraiso
