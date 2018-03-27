@@ -23,6 +23,7 @@ class windemo::install_sw {
   include windemo::install_bc4
   include windemo::install_ea10
   include windemo::set_vs_config
+  include windemo::set_ea_account
 
    Class['windemo::enable_rdp'] ->
    Class['windemo::set_admin_pwd_ne'] ->
@@ -46,5 +47,6 @@ class windemo::install_sw {
    Class['windemo::install_sab2016'] ->
    Class['windemo::install_bc4'] ->
    Class['windemo::install_ea10'] ->
-   Class['windemo::set_vs_config']
+   Class['windemo::set_vs_config'] ->
+   Class['windemo::set_ea_account']
 }
