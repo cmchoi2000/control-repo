@@ -1,8 +1,7 @@
 class windemo::install_vs2017_156 {
   file {'C:\Install\VS.NET2017_15.6':
   ensure => directory,
-  source => 'puppet:///win_share/Software/Microsoft/Vs.net2017_15.6',
-#  source => 'puppet:///win_share/Software/Microsoft/VS.NET2017_15.6',
+  source => 'puppet:///win_share/Software/Microsoft/VS.NET2017_15.6',
   recurse => 'remote'
   }
 #  } ->
