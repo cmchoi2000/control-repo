@@ -35,7 +35,7 @@ class windemo::install_sw {
    Class['windemo::install_dx11'] ->
    Class['windemo::install_odac'] ->
    Class['windemo::install_msvc_2010_x64'] ->
-   Class['windemo::install_msvc_2010_x86'] -
+   Class['windemo::install_msvc_2010_x86'] ->
    Class['windemo::install_msvc_python27'] ->
    Class['windemo::install_python27'] ->
    Class['windemo::install_cypthon'] ->
