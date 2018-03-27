@@ -6,6 +6,6 @@ class windemo::install_msvc_python27 {
   package {'Microsoft Visual C++ Compiler Package for Python 2.7':
   ensure => installed,
   source => 'C:\Install\VCForPython27.msi',
-  install_options => ['/quiet'],
+  install_options => ['/quiet', 'ALLUSERS=1'],
   }
 }
