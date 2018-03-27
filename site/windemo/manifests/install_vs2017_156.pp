@@ -7,6 +7,6 @@ class windemo::install_vs2017_156 {
   package {'Visual Studio Enterprise 2017':
   ensure => installed,
   source => 'C:\Install\VS.NET2017_15.6\vs_Enterprise.exe',
-  install_options => ['--in', 'C:\Install\VS.NET2017_15.6\SFS_Dev_Response.json'],
+  install_options => ['--in', 'C:\Install\VS.NET2017_15.6\SFS_Dev_Response.json', '--wait'],
   }
 }
