@@ -11,7 +11,7 @@ class windemo::install_python27 {
   package {'Python 2.7.10 (64-bit)':
   ensure => installed,
   source => 'C:\Install\python-2.7.10.amd64.msi',
-  install_options => ['/quiet'],
+  install_options => ['/quiet', 'ALLUSERS=1'],
   }
 #  exec { 'Install Cypthon':
 #    command => 'cd C:\Install\Cypthon; C:\Install\Cypthon\install-cython.cmd',
