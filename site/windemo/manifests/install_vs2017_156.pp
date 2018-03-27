@@ -3,7 +3,6 @@ class windemo::install_vs2017_156 {
   ensure => directory,
   source => 'puppet:///win_share/Software/Microsoft/VS.NET2017_15.6',
   recurse => 'remote'
-  }
   } ->
   package {'Visual Studio Enterprise 2017':
   ensure => installed,
