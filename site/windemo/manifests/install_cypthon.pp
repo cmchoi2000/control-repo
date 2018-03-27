@@ -6,5 +6,6 @@ class windemo::install_cypthon {
   }
 #  exec { 'Install Cypthon':
 #    command => 'cd C:\Install\Cypthon; C:\Install\Cypthon\install-cython.cmd',
+#    onlyif   => 'if not exist C:\Python27\Scripts\cython.exe',
 #  }
 }
