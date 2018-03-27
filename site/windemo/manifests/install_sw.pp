@@ -32,6 +32,8 @@ class windemo::install_sw {
    Class['windemo::install_ultraiso'] ->
    Class['windemo::install_win10_sdk'] ->
    Class['windemo::install_vs2017_156'] ->
+   Class['windemo::install_sqlclr2014'] ->
+   Class['windemo::install_smo2014'] ->
    Class['windemo::install_dx11'] ->
    Class['windemo::install_odac'] ->
    Class['windemo::install_msvc_2010_x64'] ->
