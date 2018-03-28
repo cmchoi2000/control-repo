@@ -7,7 +7,7 @@ class windemo::disable_uac_reg {
     type => dword,
     data => '0'
   }
-#  reboot { 'reboot after uac':
-#    when   => 'pending',
-#  }
+  reboot { 'reboot after uac':
+    when   => 'pending',
+  }
 }
