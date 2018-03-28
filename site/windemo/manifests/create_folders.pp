@@ -5,6 +5,9 @@ class windemo::create_folders {
 	file {'C:\Jenkins':
 	ensure => directory,
 	}
+	file {'C:\Temp':
+	ensure => directory,
+	}
   file {'C:\Install\Desktop':
   ensure => directory,
   source => 'puppet:///win_share/Software/Desktop',
