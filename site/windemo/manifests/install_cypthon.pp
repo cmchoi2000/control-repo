@@ -4,8 +4,9 @@ class windemo::install_cypthon {
   source => 'puppet:///win_share/Software/Python/Cypthon',
   recurse => 'remote'
   }
-#  exec { 'Install Cypthon':
-#    command => 'cd C:\Install\Cypthon; C:\Install\Cypthon\install-cython.cmd',
-#    onlyif   => 'if not exist C:\Python27\Scripts\cython.exe',
-#  }
+  exec { 'Install Cypthon':
+    cwd => 'cd C:\Install\Cypthon',
+    command => 'C:\Install\Cypthon\install-cython.cmd',
+    onlyif   => 'if not exist C:\Python27\Scripts\cython.exe',
+  }
 }
