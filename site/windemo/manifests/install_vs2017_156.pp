@@ -10,6 +10,6 @@ class windemo::install_vs2017_156 {
   install_options => ['--in', 'C:\Install\VS.NET2017_15.6\SFS_SCM_Response.json', '--wait'],
   }
   reboot { 'Reboot After VS2017':
-    subscribe => package['Visual Studio Enterprise 2017'],
+    subscribe => Package['Visual Studio Enterprise 2017'],
   }
 }
