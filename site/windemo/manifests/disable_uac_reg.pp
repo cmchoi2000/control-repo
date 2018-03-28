@@ -8,7 +8,8 @@ class windemo::disable_uac_reg {
     data => '0'
   } ->
   reboot { 'reboot after uac':
-    apply   => finished,
+    subscribe => registry_value,
+#    apply   => finished,
   }
 #    reboot { 'reboot after uac':
 #    subscribe => registry_value,
