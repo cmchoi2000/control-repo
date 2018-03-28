@@ -5,10 +5,7 @@ class windemo::create_folders {
 	file {'C:\Jenkins':
 	ensure => directory,
 	}
-	file {'C:\BuildScripts_RTC':
-	ensure => directory,
-	}
-  file {'C:\BuildScripts_RTC\Desktop':
+  file {'C:\Install\Desktop':
   ensure => directory,
   source => 'puppet:///win_share/Software/Desktop',
   recurse => 'remote'
