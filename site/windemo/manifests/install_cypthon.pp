@@ -5,7 +5,7 @@ class windemo::install_cypthon {
   recurse => 'remote'
   }
   exec { 'C:\Install\Cypthon\install-cython.cmd':
-    cwd => 'cd C:\Install\Cypthon',
+    cwd => 'C:\Install\Cypthon',
 #    command => 'C:\Install\Cypthon\install-cython.cmd',
     onlyif   => 'if not exist C:\Python27\Scripts\cython.exe',
   }
