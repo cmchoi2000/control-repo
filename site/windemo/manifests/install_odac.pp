@@ -5,7 +5,7 @@ class windemo::install_odac {
   recurse => 'remote'
   }
 
-  exec { 'Install ODAC'':
+  exec { 'Install ODAC':
     cwd => 'C:\Install\ODAC112021Xcopy_x64',
     command => 'C:\Windows\System32\cmd.exe /c "install.bat all c:\oracle odac"',
     onlyif  => 'C:\Windows\System32\cmd.exe /c "if not exist C:\oracle (exit 0) else (exit 1)"',
