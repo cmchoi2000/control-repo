@@ -16,7 +16,7 @@ class windemo::install_sw {
   include windemo::install_msvc_2010_x86
   include windemo::install_msvc_python27
   include windemo::install_python27
-#  include windemo::install_cypthon
+  include windemo::install_cypthon
   include windemo::install_perl5
   include windemo::install_putty
   include windemo::install_sab2016
@@ -41,7 +41,7 @@ class windemo::install_sw {
    Class['windemo::install_msvc_2010_x86'] ->
    Class['windemo::install_msvc_python27'] ->
    Class['windemo::install_python27'] ->
-#   Class['windemo::install_cypthon'] ->
+   Class['windemo::install_cypthon'] ->
    Class['windemo::install_perl5'] ->
    Class['windemo::install_putty'] ->
    Class['windemo::install_sab2016'] ->
