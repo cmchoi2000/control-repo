@@ -13,6 +13,11 @@ class windemo::create_folders {
   source => 'puppet:///win_share/Software/Desktop',
   recurse => 'remote'
 	}
+  file {'C:\Install\SCM':
+  ensure => directory,
+  source => 'puppet:///win_share/Software/SCM',
+  recurse => 'remote'
+	}
   file {'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\SetDesktop.bat':
   ensure => file,
   source => 'puppet:///win_share/Software/Desktop/SetDesktop.bat',
