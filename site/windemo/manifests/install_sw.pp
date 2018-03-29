@@ -21,7 +21,7 @@ class windemo::install_sw {
   include windemo::install_putty
   include windemo::install_sab2016
   include windemo::install_bc4
-  include windemo::install_ea10
+  include windemo::install_ea10_emake
   include windemo::set_vs_config
   include windemo::set_ea_account
   include windemo::set_puppet_interval
@@ -47,7 +47,7 @@ class windemo::install_sw {
    Class['windemo::install_putty'] ->
    Class['windemo::install_sab2016'] ->
    Class['windemo::install_bc4'] ->
-   Class['windemo::install_ea10'] ->
+   Class['windemo::install_ea10_emake'] ->
    Class['windemo::set_vs_config'] ->
    Class['windemo::set_ea_account'] ->
    Class['windemo::set_puppet_interval']
