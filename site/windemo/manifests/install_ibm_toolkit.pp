@@ -11,7 +11,7 @@ class windemo::install_ibm_toolkit {
     cwd => 'C:\Install\SCM',
     command => 'C:\Windows\System32\cmd.exe /c "C:\Install\SCM\7za.exe x C:\Install\RTC\RTC-BuildSystem-Toolkit-repo-6.0.3.zip -oC:\Install\RTC\RTC-BuildSystem-Toolkit-repo-6.0.3"',
     onlyif  => 'C:\Windows\System32\cmd.exe /c "if not exist C:\Install\RTC\RTC-BuildSystem-Toolkit-repo-6.0.3 (exit 0) else (exit 1)"',
-  }
+  } ->
   exec { 'Install IBM ToolKit':
     cwd => 'C:\Program Files\IBM\Installation Manager\eclipse',
     command => 'C:\Windows\System32\cmd.exe /c "IBMIM.exe -input c:\Install\RTC\IBM_TK.xml -acceptLicense -silent -nosplash"',
