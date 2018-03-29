@@ -1,25 +1,25 @@
 class windemo::create_folders {
 	file {'C:\Install':
-	ensure => directory,
+	  ensure => directory,
 	}
 	file {'C:\Jenkins':
-	ensure => directory,
+	  ensure => directory,
 	}
 	file {'C:\Temp':
-	ensure => directory,
+  	ensure => directory,
 	}
   file {'C:\Install\Desktop':
-  ensure => directory,
-  source => 'puppet:///win_share/Software/Desktop',
-  recurse => 'remote'
+    ensure => directory,
+    source => 'puppet:///win_share/Software/Desktop',
+    recurse => 'remote'
 	}
   file {'C:\Install\SCM':
-  ensure => directory,
-  source => 'puppet:///win_share/Software/SCM',
-  recurse => 'remote'
+    ensure => directory,
+    source => 'puppet:///win_share/Software/SCM',
+    recurse => 'remote'
 	}
   file {'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\SetDesktop.bat':
-  ensure => file,
-  source => 'puppet:///win_share/Software/Desktop/SetDesktop.bat',
+    ensure => file,
+    source => 'puppet:///win_share/Software/Desktop/SetDesktop.bat',
   }
 }

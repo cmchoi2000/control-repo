@@ -1,12 +1,10 @@
 class windemo::install_ibm_im {
   file {'C:\Install\RTC':
-  ensure => directory,
-  source => 'puppet:///win_share/Software/Desktop',
-  recurse => 'remote'
+    ensure => directory,
 	} ->
   file {'C:\Install\RTC\agent.installer.win32.win32.x86_64_1.8.9000.20180313_1417.zip':
-  ensure => file,
-  source => 'puppet:///win_share/Software/RTC/agent.installer.win32.win32.x86_64_1.8.9000.20180313_1417.zip',
+    ensure => file,
+    source => 'puppet:///win_share/Software/RTC/agent.installer.win32.win32.x86_64_1.8.9000.20180313_1417.zip',
   } ->
   exec { 'Extract IBM IM':
     cwd => 'C:\Install\SCM',
