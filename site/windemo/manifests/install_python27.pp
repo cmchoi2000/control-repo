@@ -5,7 +5,7 @@ class windemo::install_python27 {
   } ->
   package {'Python 2.7.10 (64-bit)':
   ensure => installed,
-  source => 'C:\Instal\Python\python-2.7.10.amd64.msi',
+  source => 'C:\Install\Python\python-2.7.10.amd64.msi',
   install_options => ['/quiet', 'ALLUSERS=1'],
   }
 }
