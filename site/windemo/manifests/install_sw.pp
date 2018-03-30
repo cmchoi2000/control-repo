@@ -10,8 +10,8 @@ class windemo::install_sw {
   include windemo::install_vs2017_156
   include windemo::install_ibm_im
   include windemo::install_ibm_toolkit
-  include windemo::install_sqlclr2014
-  include windemo::install_smo2014
+  include windemo::install_sql2014
+#  include windemo::install_smo2014
   include windemo::install_dx11
   include windemo::install_odac
   include windemo::install_msvc_2010_x64
@@ -38,8 +38,8 @@ class windemo::install_sw {
    Class['windemo::install_vs2017_156'] ->
    Class['windemo::install_ibm_im'] ->
    Class['windemo::install_ibm_toolkit'] ->
-   Class['windemo::install_sqlclr2014'] ->
-   Class['windemo::install_smo2014'] ->
+   Class['windemo::install_sql2014'] ->
+#   Class['windemo::install_smo2014'] ->
    Class['windemo::install_dx11'] ->
    Class['windemo::install_odac'] ->
    Class['windemo::install_msvc_2010_x64'] ->
