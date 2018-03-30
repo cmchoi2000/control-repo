@@ -1,7 +1,4 @@
 class windemo::install_msvc_2010_x86 {
-	file {'C:\Install\VS2017_Redist':
-	ensure => directory,
-	}
   file {'C:\Install\VS2017_Redist\vcredist_x86.exe':
   ensure => file,
   source => 'puppet:///win_share/Software/Microsoft/VS.NET2010/Redist/vcredist_x86.exe',
