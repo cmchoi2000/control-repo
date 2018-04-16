@@ -14,7 +14,7 @@ class windemo::install_sw_ea {
   include windemo::install_msvc_python27
   include windemo::install_python27
   include windemo::install_cypthon
-  include windemo::install_ea10_emake
+  include windemo::install_ea10_agent
   include windemo::set_vs_config
   include windemo::set_ea_account
   include windemo::set_puppet_interval
