@@ -14,9 +14,9 @@ class windemo::install_ea10_agent {
   ensure => installed,
   source => 'C:\Install\ElectricAccelerator\ElectricAccelerator-10.0.1.78161-Windows-Install.exe',
   install_options => ['--mode', 'silent', '--propertyfile', 'C:\Install\ElectricAccelerator\install10.props'],
-  }
+  } ->
   file {'C:\ECloud\i686_win32\bin\runagent.local':
   ensure => file,
   source => 'puppet:///win_share/Software/ElectricCloud/runagent.local',
-  } ->
+  }
 }
