@@ -33,7 +33,7 @@ class windemo::install_sw_ea {
    Class['windemo::install_msvc_python27'] ->
    Class['windemo::install_python27'] ->
    Class['windemo::install_cypthon'] ->
-   Class['windemo::install_ea10_emake'] ->
+   Class['windemo::install_ea10_agent'] ->
    Class['windemo::set_vs_config'] ->
    Class['windemo::set_ea_account'] ->
    Class['windemo::set_puppet_interval']
