@@ -6,3 +6,4 @@ class windemo::disable_nfs_memory_reg {
     type   => 'dword',
     data   => '1',
   }
+}

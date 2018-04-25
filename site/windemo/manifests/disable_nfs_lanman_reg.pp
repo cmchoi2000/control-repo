@@ -1,4 +1,4 @@
-class windemo::disablenfsreg {
+class windemo::disable_nfs_lanman_reg {
 
   registry::value{'LanmanServer':
     key    => 'HKLM\SYSTEM\CurrentControlSet\services\LanmanServer\Parameters',
@@ -6,3 +6,4 @@ class windemo::disablenfsreg {
     type   => 'dword',
     data   => '3',
   }
+}
