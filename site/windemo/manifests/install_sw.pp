@@ -1,6 +1,7 @@
 class windemo::install_sw {
   include windemo::enable_rdp
   include windemo::set_admin_pwd_ne
+  include windemo::disable_nfs_lanman_reg
   include windemo::disable_uac_reg
   include windemo::enable_net_35
   #include windows::set_power_scheme
@@ -28,6 +29,7 @@ class windemo::install_sw {
 
    Class['windemo::enable_rdp'] ->
    Class['windemo::set_admin_pwd_ne'] ->
+   Class['windemo::disable_nfs_lanman_reg'] ->
    Class['windemo::disable_uac_reg'] ->
    Class['windemo::enable_net_35'] ->
    Class['windemo::set_win_update'] ->
