@@ -6,7 +6,7 @@ class windemo::install_sw_ea {
   #include windows::set_power_scheme
   include windemo::set_win_update
   include windemo::install_win10_sdk
-  include windemo::install_vs2017_156
+  include windemo::install_vs2017_1571
   include windemo::install_sql2014
   include windemo::install_dx11
   include windemo::install_odac
@@ -25,7 +25,7 @@ class windemo::install_sw_ea {
    Class['windemo::enable_net_35'] ->
    Class['windemo::set_win_update'] ->
    Class['windemo::install_win10_sdk'] ->
-   Class['windemo::install_vs2017_156'] ->
+   Class['windemo::install_vs2017_1571'] ->
    Class['windemo::install_sql2014'] ->
    Class['windemo::install_dx11'] ->
    Class['windemo::install_odac'] ->

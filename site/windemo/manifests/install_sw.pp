@@ -8,7 +8,7 @@ class windemo::install_sw {
   include windemo::set_win_update
   include windemo::install_ultraiso
   include windemo::install_win10_sdk
-  include windemo::install_vs2017_156
+  include windemo::install_vs2017_1571
   include windemo::install_ibm_im
   include windemo::install_ibm_toolkit
   include windemo::install_sql2014
@@ -35,7 +35,7 @@ class windemo::install_sw {
    Class['windemo::set_win_update'] ->
    Class['windemo::install_ultraiso'] ->
    Class['windemo::install_win10_sdk'] ->
-   Class['windemo::install_vs2017_156'] ->
+   Class['windemo::install_vs2017_1571'] ->
    Class['windemo::install_ibm_im'] ->
    Class['windemo::install_ibm_toolkit'] ->
    Class['windemo::install_sql2014'] ->
