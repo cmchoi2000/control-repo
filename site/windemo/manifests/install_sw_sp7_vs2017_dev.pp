@@ -16,7 +16,6 @@ class windemo::install_sw_sp7_vs2017_dev {
   include windemo::install_msvc_2010_redist
   include windemo::install_msvc_python27
   include windemo::install_ktpython27
-  include windemo::install_perl5
   include windemo::install_putty
   include windemo::install_bc4
   include windemo::set_puppet_interval
@@ -37,7 +36,6 @@ class windemo::install_sw_sp7_vs2017_dev {
    Class['windemo::install_msvc_2010_redist'] ->
    Class['windemo::install_msvc_python27'] ->
    Class['windemo::install_ktpython27'] ->
-   Class['windemo::install_perl5'] ->
    Class['windemo::install_putty'] ->
    Class['windemo::install_bc4'] ->
    Class['windemo::set_puppet_interval']
