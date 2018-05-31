@@ -3,7 +3,7 @@ class windemo::install_sw_ea {
   include windemo::set_admin_pwd_ne
   include windemo::disable_uac_reg
   include windemo::enable_net_35
-  include windows::set_power_scheme
+  include windemo::set_power_scheme
   include windemo::set_win_update
   include windemo::install_win10_sdk
   include windemo::install_vs2017_1571

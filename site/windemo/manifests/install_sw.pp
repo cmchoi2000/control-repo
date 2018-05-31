@@ -4,7 +4,7 @@ class windemo::install_sw {
   include windemo::disable_nfs_lanman_reg
   include windemo::disable_uac_reg
   include windemo::enable_net_35
-  include windows::set_power_scheme
+  include windemo::set_power_scheme
   include windemo::set_win_update
   include windemo::install_ultraiso
   include windemo::install_win10_sdk
