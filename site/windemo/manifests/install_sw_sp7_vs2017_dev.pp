@@ -4,7 +4,7 @@ class windemo::install_sw_sp7_vs2017_dev {
   include windemo::disable_nfs_lanman_reg
   include windemo::disable_uac_reg
   include windemo::enable_net_35
-  #include windows::set_power_scheme
+  include windows::set_power_scheme
   include windemo::set_win_update
   include windemo::install_ultraiso
   include windemo::install_win10_sdk
@@ -25,6 +25,7 @@ class windemo::install_sw_sp7_vs2017_dev {
    Class['windemo::disable_nfs_lanman_reg'] ->
    Class['windemo::disable_uac_reg'] ->
    Class['windemo::enable_net_35'] ->
+   Class['windemo::set_power_scheme'] ->
    Class['windemo::set_win_update'] ->
    Class['windemo::install_ultraiso'] ->
    Class['windemo::install_win10_sdk'] ->
