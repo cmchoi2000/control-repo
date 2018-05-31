@@ -32,7 +32,7 @@ class windemo::set_power_scheme(
   # Use POWERCFG.EXE to set the desired power scheme.
   exec { 'windows-powercfg':
     command  => "POWERCFG -SETACTIVE ${guid}",
-    unless   => template('powercfg_check.ps1.erb'),
+    unless   => template('windemo/powercfg_check.ps1.erb'),
     provider => 'powershell',
   }
 }
