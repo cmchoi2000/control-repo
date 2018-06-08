@@ -3,7 +3,9 @@ class windemo::install_ktpython27 {
 	ensure => directory,
 	} ->
   file {'C:\Install\KT_Python\Python_2.7.10156.iso':
+    ensure => absent,
+  } ->  file {'C:\Install\KT_Python\Python_2.7.10157.iso':
   ensure => file,
-  source => 'puppet:///win_share/Software/KT/Python/Python_2.7.10156.iso',
+  source => 'puppet:///win_share/Software/KT/Python/Python_2.7.10157.iso',
   }
 }
