@@ -7,6 +7,9 @@ class windemo::install_sw_sp7_vs2010_dev {
   include windemo::set_power_scheme
   include windemo::set_win_update
   include windemo::install_ultraiso
+  include windemo::install_win_debug
+  include windemo::install_vs2010
+  include windemo::install_ktaddin_vs2010
   include windemo::install_sql2014_std
   include windemo::install_dx11
   include windemo::install_odac
@@ -25,6 +28,9 @@ class windemo::install_sw_sp7_vs2010_dev {
    Class['windemo::set_power_scheme'] ->
    Class['windemo::set_win_update'] ->
    Class['windemo::install_ultraiso'] ->
+   Class['windemo::install_win_debug'] ->
+   Class['windemo::install_vs2010'] ->
+   Class['windemo::install_ktaddin_vs2010'] ->
    Class['windemo::install_sql2014_std'] ->
    Class['windemo::install_dx11'] ->
    Class['windemo::install_odac'] ->

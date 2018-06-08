@@ -9,7 +9,7 @@ class windemo::install_sw_sp7_vs2017_dev {
   include windemo::install_ultraiso
   include windemo::install_win10_sdk
   include windemo::install_vs2017_1571
-  include windemo::install_ktaddin
+  include windemo::install_ktaddin_vs2017
   include windemo::install_sql2014_std
   include windemo::install_dx11
   include windemo::install_odac
@@ -30,7 +30,7 @@ class windemo::install_sw_sp7_vs2017_dev {
    Class['windemo::install_ultraiso'] ->
    Class['windemo::install_win10_sdk'] ->
    Class['windemo::install_vs2017_1571'] ->
-   Class['windemo::install_ktaddin'] ->
+   Class['windemo::install_ktaddin_vs2017'] ->
    Class['windemo::install_sql2014_std'] ->
    Class['windemo::install_dx11'] ->
    Class['windemo::install_odac'] ->
