@@ -14,5 +14,12 @@ class windemo::install_python27_archive {
   source => 'puppet:///win_share/Software/Python/python-2.7.10.amd64.msi',
   }
 
+  package {'Microsoft Visual C++ Compiler Package for Python 2.7':
+    notify { "Python27" }
+  }
+
+  package {'ActivePerl 5.22.1 Build 2201 (64-bit)':
+    notify { "ActivePerl" }
+  }
 
 }
