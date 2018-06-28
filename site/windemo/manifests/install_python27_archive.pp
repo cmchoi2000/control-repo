@@ -15,11 +15,11 @@ class windemo::install_python27_archive {
   }
 
   package {'Microsoft Visual C++ Compiler Package for Python 2.7':
-    notify { "Python27" }
+    notify { "Python27": }
   }
 
   package {'ActivePerl 5.22.1 Build 2201 (64-bit)':
-    notify { "ActivePerl" }
+    notify { "ActivePerl": }
   }
 
 }
