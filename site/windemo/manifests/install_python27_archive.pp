@@ -3,6 +3,9 @@ class windemo::install_python27_archive {
   $message = lookup('message')
   notify { $message: }
 
+  $message = lookup('message2')
+  notify { $message2: }
+
   archive {'C:\Install\Python':
   ensure        => present,
 #  extract       => true,

@@ -1,2 +1,3 @@
 ---
 message: "This node is using common data"
+message2: "This node is using common.yaml"
