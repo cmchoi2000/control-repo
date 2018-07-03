@@ -2,7 +2,7 @@ class windemo::createlogin {
 	user {'ktmfg':
 			name      => 'ktmfg',
 			ensure    => present,
-			groups    => [Administrators'],
+			groups    => ['Administrators'],
 			password_max_age => -1,
 			managehome => true,
 	}
