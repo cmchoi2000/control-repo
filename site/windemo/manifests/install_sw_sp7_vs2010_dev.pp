@@ -18,6 +18,7 @@ class windemo::install_sw_sp7_vs2010_dev {
   include windemo::install_ktpython27
   include windemo::install_putty
   include windemo::install_bc4
+  include windemo::createlogin
   include windemo::set_puppet_interval
 
    Class['windemo::enable_rdp'] ->
@@ -39,5 +40,6 @@ class windemo::install_sw_sp7_vs2010_dev {
    Class['windemo::install_ktpython27'] ->
    Class['windemo::install_putty'] ->
    Class['windemo::install_bc4'] ->
+   Class['windemo::createlogin'] ->
    Class['windemo::set_puppet_interval']
 }
