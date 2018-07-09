@@ -5,16 +5,16 @@ class windemo::install_ea10_agent {
 	file {'C:\Install\ElectricAccelerator\10.1.0.80918':
     ensure => directory,
 	} ->  
+  file {'C:\Install\ElectricAccelerator\10.0.3.78576\ElectricAccelerator-10.0.3.78576-Windows-Install.exe':
+    ensure => absent,
+  } ->
+  file {'C:\Install\ElectricAccelerator\10.0.3.78576\install10.props':
+    ensure => absent,
+  } ->
+  file {'C:\Install\ElectricAccelerator\10.0.3.78576\VSIntegration-5.2.5.39245-Install.exe':
+    ensure => absent,
+  } ->
   file {'C:\Install\ElectricAccelerator\10.0.3.78576':
-    ensure => absent,
-  } ->
-  file {'C:\Install\ElectricAccelerator\ElectricAccelerator-10.0.1.78161-Windows-Install.exe':
-    ensure => absent,
-  } ->
-  file {'C:\Install\ElectricAccelerator\ElectricAccelerator-10.0.3.78576-Windows-Install.exe':
-    ensure => absent,
-  } ->
-  file {'C:\Install\ElectricAccelerator\install10.props':
     ensure => absent,
   } ->
   file {'C:\Install\ElectricAccelerator\10.1.0.80918\ElectricAccelerator-10.1.0.80918-Windows-Install.exe':
