@@ -4,7 +4,7 @@ class windemo::install_ea10_agent {
 	}
 	file {'C:\Install\ElectricAccelerator\10.1.0.80918':
     ensure => directory,
-	} ->  
+	} ->
   file {'C:\Install\ElectricAccelerator\10.0.3.78576':
     ensure => absent,
     force => true,
